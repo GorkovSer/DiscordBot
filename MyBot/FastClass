@@ -1,0 +1,13 @@
+import json,sqlite3,requests,discord,random,time,asyncio
+from discord.activity import Activity
+from discord.ext import commands,tasks
+from PIL import Image, ImageDraw
+
+
+# Класс Admin
+class name(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+def setup(bot):
+    bot.add_cog(name(bot))
